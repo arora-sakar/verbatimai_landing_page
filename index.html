@@ -111,7 +111,7 @@
         }
 
         .navbar .logo-link img { /* Style for the logo image */
-            height: 300px; /* Adjust as needed */
+            height: 200px; /* Adjust as needed */
             width: auto;
             vertical-align: middle; /* Aligns image nicely if there's text next to it */
         }
@@ -243,6 +243,42 @@
             color: #E0E0E0; /* Lighter Gray for contrast on Blue */
         }
 
+        /* Email Signup Form Styles */
+        .signup-form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .signup-form input[type="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .signup-form input[type="email"]:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(126, 211, 33, 0.3);
+        }
+
+        .signup-form .form-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .signup-form .form-group {
+                flex-direction: column;
+            }
+            .signup-form input[type="email"] {
+                margin-bottom: 10px;
+            }
+        }
 
         /* --- Footer --- */
         .footer {
@@ -348,7 +384,14 @@
         <div class="container">
             <h2>Ready to Hear What Your Customers Are <em>Really</em> Saying?</h2>
             <p>Sign up for VerbatimAI today. Transform feedback into your biggest asset.</p>
-            <a href="#actual-signup-page-link" class="btn btn-primary" style="background-color: #7ED321; color: #fff;">Join the Waitlist</a>
+            <div class="signup-form">
+                <form id="waitlist-form" action="#" method="POST">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary" style="background-color: #7ED321; color: #fff;">Join the Waitlist</button>
+                    </div>
+                </form>
+            </div>
             <p class="small-text" style="color: #E0E0E0;">Be among the first to experience VerbatimAI.</p>
         </div>
     </section>
