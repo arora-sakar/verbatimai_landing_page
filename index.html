@@ -364,28 +364,20 @@
         </div>
     </section>
 
-    <section class="social-proof">
-        <div class="container">
-            <h2>Businesses Trust VerbatimAI</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="quote">"[Placeholder: Quote about clarity gained or time saved from customer feedback insights. This tool is a game-changer!]"</p>
-                    <p class="author">– [Placeholder: Business Owner Name], [Placeholder: Local Cafe Owner]</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="quote">"[Placeholder: Another great quote focusing on how easy it was to identify key improvement areas using VerbatimAI.]"</p>
-                    <p class="author">– [Placeholder: E-commerce Manager], [Placeholder: Online Boutique]</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="signup-form" class="cta-section">
         <div class="container">
             <h2>Ready to Hear What Your Customers Are <em>Really</em> Saying?</h2>
             <p>Sign up for VerbatimAI today. Transform feedback into your biggest asset.</p>
             <div class="signup-form">
-                <form id="waitlist-form" action="#" method="POST">
+                <form id="waitlist-form" action="https://formsubmit.co/ad42c8c291a12741e4b1256e940fae6b" method="POST">
+                    <!-- Honeypot to prevent spam -->
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- Disable Captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Specify redirect after submission -->
+                    <input type="hidden" name="_next" value="thank-you.html">
+                    <!-- Specify subject -->
+                    <input type="hidden" name="_subject" value="New Waitlist Signup!">
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Enter your email address" required>
                         <button type="submit" class="btn btn-primary" style="background-color: #7ED321; color: #fff;">Join the Waitlist</button>
